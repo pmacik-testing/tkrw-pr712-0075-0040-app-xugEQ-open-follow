@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hlqr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0040-tenant/tkrw-pr712-0075-0040-app/devfile-sample-hlqr@sha256:5445bfaec3c2c301e933835e94d3bdf92328d59115610a84f3c2103a7f1725fb
+        name: my-nodejs
+        resources: {}
+status: {}
